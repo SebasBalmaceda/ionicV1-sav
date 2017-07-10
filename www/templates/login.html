@@ -1,0 +1,27 @@
+<ion-view view-title=" Bienvenido a SAV" name="login-view">
+  <ion-content class="padding">
+      <div style="text-align:center;margin top: 20px;">
+     <ion-avatar>
+      <div class="spacer" style="height: 30px;" ></div>
+      <img style ="border-radius:150%;size=80%;"src="img/icono1.png"/>
+      
+          </ion-avatar>
+      </div>
+             <ion-list>
+                 <div class="button" style="position:center;background-color:transparent"> </div>  
+                <label class="item item-input"style="opacity:0.80;width:60%;height:40;border-radius:3%;margin-left:50px;top: 0;right:180px;bottom:-30px;">
+                    <input type="text" placeholder="Usuario" ng-model="creds.email">
+                </label>
+            <div class="spacer" style="height: 10px;" ></div>
+                <label class="item item-input" style="opacity:0.80;width:60%;height:40;border-radius:3%;margin-left:50px;top: 0;right:180px;bottom:-30px;">
+                    <input type="password"  placeholder="Clave" ng-model="creds.password">
+                </label>
+            </ion-list>
+    
+            <div class="spacer" style="height:20px;" ></div>
+            <a ng-click="doLoginAction(creds)" style="width:60%;height:40;margin-left:240px;top: 0;right:180px;bottom:-30px;" class="button button-positive">Ingresar</a>
+          
+            
+       
+    </ion-content>
+</ion-view>

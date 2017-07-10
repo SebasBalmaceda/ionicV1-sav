@@ -1,0 +1,62 @@
+<ion-view view-title="PedidoMenu">
+  <ion-nav-buttons side="left">
+    <button class="button icon-left ion-reply bar-stable" ng-click="volver()">Volver</button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button icon-left ion-log-out bar-stable" ng-click="logout()">Logout</button> 
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <div class="list card">
+      <div>
+      <div class="item item-divider bar bar-dark">Pedido </div>
+      <div>
+      <div class="item item-body">
+
+    <div class="list">
+      <label class="item item-input">
+              <input type="text" placeholder="Pedido.Nro" ng-model="menuObj.id_menu"required>
+          </label>
+       <label class="item item-input">
+              <input type="text" placeholder="AAAA-MM-DD" ng-model="menuObj.fecha"required>
+          </label>
+        <label class="item item-input">
+              <input type="text" placeholder="Proveedor" ng-model="menuObj.proveedor"required>
+          </label>
+       <label class="item item-input">
+              <input type="text" placeholder="Comida" ng-model="menuObj.comida"required>
+          </label>
+        <label class="item item-input">
+              <input type="text" placeholder="Postre" ng-model="menuObj.postre"required>
+          </label>
+        <label class="item item-input">
+              <input type="text" placeholder="Precio" ng-model="menuObj.precio"required>
+          </label>
+       
+</div>
+    
+    <div class="button-bar">
+   <a class="button  button-block button-positive", ng-click="AltaPedido()">Aceptar</a>
+  <a class="button  button-block button-assertive", ng-click="MostrarPedido()">Mostrar</a>
+  <a class="button  button-block button-balanced", ng-click="limpiarPedido()">Cancelar</a>
+    </div>
+  </body>
+ 
+   </form>
+
+  </ion-content>
+</ion-view>
+
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  

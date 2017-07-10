@@ -1,0 +1,35 @@
+<ion-view view-title="mostrar pedido">
+  <ion-nav-buttons side="left">
+    <button class="button icon-left ion-reply bar-stable" ng-click="volver()">Volver</button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+
+
+    <div class="list card">
+      <div>
+
+
+        <div class="item item-divider bar bar-dark">Listado de Pedido</div>
+        <body>
+        <form>
+          <div class="item item-body">
+
+
+            <ion-item ng-repeat="pedido in pedidos">
+
+              <h2>N°{{pedido.id_menu}} Fecha:{{pedido.fecha}}</h2>
+              <p>{{pedido.proveedor}}</p>
+              <p>{{pedido.comida}}</p>
+              <p>{{pedido.postre}}</p>
+              <p>{{pedido.precio}}</p>
+              <a class="button button-small button-assertive ion-trash-a" ng-click="BorrarPedido(pedido.id_menu)">
+                Eliminar</a>
+              <a class="button button-small button-positive ion-edit" ng-click="openModal (pedido)"> Editar</a>
+            </ion-item>
+            </ion-list>
+        </form>
+        </body>
+
+  </ion-content>
+</ion-view>
+

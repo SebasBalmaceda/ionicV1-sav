@@ -1,0 +1,30 @@
+<ion-view view-title="Principal">
+    <ion-nav-buttons side="right">
+    <button class="button icon-left ion-log-out bar-stable" ng-click="logout()">Logout</button> 
+  </ion-nav-buttons>
+   <ion-content class="padding" ng-controller="DashCtrl">
+ <div class="button button-small" style="position:relative;padding-right:18%;background-color:transparent"> </div> 
+ <div class="button button-middle" style="position:relative;padding-right:18%;background-color:transparent"> </div> 
+ <div class='wrapper'>
+  <div class='letter'>
+   <a  class="button button-positive button-small"style="position:relative;background-color:transparent" ng-click="IrPedido()">
+      <div class="caja">Pedir Vianda </div><img src="img/pedido.png"/></a>
+  </div>
+  <div class='letter'>
+    <a  class="button button-positive button-small"style="position:relative;background-color:transparent"ng-click="IrMenu()">
+   <div class="caja">Menu de Viandas</div>
+   <img src="img/menu.png"/></a>
+  </div>
+  <div class='letter'>
+     <a  class="button button-positive button-small" style="position:relative;background-color:transparent"ng-click="IrProveedor()">
+     <div class="caja">Mis Proveedores</div>
+    <img src="img/proveedor.png"/></a>
+  </div>
+  <div class='letter'>
+     <a  class="button button-positive button-small"style="position:relative;background-color:transparent"ng-click="IrPedidos()">
+   <div class="caja">Mis Pedidos</div>
+   <img src="img/usuario.png"/></a>
+  </div>
+</div>
+  </ion-content>
+</ion-view>

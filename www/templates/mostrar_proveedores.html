@@ -1,0 +1,86 @@
+
+   <ion-view view-title="mostrar_proveedores">
+      <ion-nav-buttons side="left">
+    <button class="button icon-left ion-reply bar-stable" ng-click="volver()">Volver</button>
+  </ion-nav-buttons>
+
+  <ion-content class="padding">
+
+
+    <div class="list card">
+
+      <div class="item item-divider bar bar-dark" >Listado de Proveedores</div>
+        </button>
+
+  <body>
+   <form><div class="item item-body">
+
+       	<ion-item ng-repeat="proveedor in proveedores">
+
+        <h2>{{proveedor.proveedor}}</h2>
+        <p>{{proveedor.cuit}}</p>
+
+
+          </ion-item>
+        </div>
+    		</ion-list>
+
+
+    </form>
+   </body>
+
+  </ion-content>
+</ion-view>
+
+
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar >
+      <div class="buttons">
+            <h1 class="title">Editar Proveedor</h1>
+            <button class="button button-icon  ion-close-circled" ng-click="modal.hide()">
+            </button>
+          </div>
+    </ion-header-bar>
+   <ion-content ng-repeat="proveedor in proveedores">
+                <form>
+                    <div class="list">
+                        <label class="item item-input">
+                        <span class="input-label">CUIT :</span>
+                            <input type="text" placeholder="{proveedor.cuit}" ng-model="proveedor.cuit">
+
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Proveedor :</span>
+                            <input type="text" placeholder="{proveedor.proveedor}" ng-model="proveedor.proveedor">
+                        </label>
+                       <label class="item item-input">
+                        <span class="input-label">Domicilio :</span>
+                            <input type="text" placeholder="{proveedor.domicilio}" ng-model="proveedor.domicilio">
+                        </label>
+                       <label class="item item-input">
+                        <span class="input-label">Ciudad :</span>
+                            <input type="text" placeholder="{proveedor.ciudad}" ng-model="proveedor.ciudad">
+                        </label>
+                       <label class="item item-input">
+                        <span class="input-label">Provincia :</span>
+                            <input type="text" placeholder="{proveedor.provincia}" ng-model="proveedor.provincia">
+                        </label>
+                       <label class="item item-input">
+                        <span class="input-label">Telefono :</span>
+                            <input type="text" placeholder="{proveedor.telefono}" ng-model="proveedor.telefono">
+                        </label>
+                       <label class="item item-input">
+                        <span class="input-label">Email :</span>
+                            <input type="text" placeholder="{proveedor.email}" ng-model="proveedor.email">
+                        </label>
+
+
+                    </div>
+                    <button class="button button-positive button-block" ng-click="Editar(proveedor)">
+                            Guardar
+                        </button>
+                </form>
+        </ion-content>
+  </ion-modal-view>
+</script>
