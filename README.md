@@ -1,1 +1,1 @@
-# ionicV1-sav
+este archivo contiene todo el trabajo realizado para rendir el final de la tesis de Analista de Sistema, se trata de un  trabajo realizado utilizando la metodologia apirest, yo cree un frontend hibrido de escritorio y otro mobile orientado a ios utilizando el framework ionic.
