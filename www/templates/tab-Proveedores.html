@@ -1,0 +1,48 @@
+
+<ion-view view-title="SAV" >
+    <ion-nav-buttons side="right">
+    <button class="button icon-left ion-log-out bar-stable" ng-click="logout()">Logout</button> 
+  </ion-nav-buttons>
+    <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider bar bar-dark">Proveedores </div>
+    <div class="item item-body">
+        <body>
+        <form>
+        <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="CUIT" ng-model="proveedorObj.cuit"required>
+          </label>
+      <label class="item item-input">
+              <input type="text" placeholder="Proveedor" ng-model="proveedorObj.proveedor"required>
+          </label>
+          
+          <label class="item item-input">
+              <input type="text" placeholder="Domicilio" ng-model="proveedorObj.domicilio"required>
+          </label>
+          <label class="item item-input">
+              <input type="text" placeholder="Ciudad" ng-model="proveedorObj.ciudad"required>
+          </label>
+          <label class="item item-input">
+              <input type="text" placeholder="Provincia" ng-model="proveedorObj.provincia"required>
+          </label>
+          <label class="item item-input">
+              <input type="text" placeholder="Telefono" ng-model="proveedorObj.telefono"required>
+          </label>
+          <label class="item item-input">
+              <input type="text" placeholder="Email" ng-model="proveedorObj.email"required>
+          </label>
+          
+
+      </div>
+         <div class="button-bar">
+  <a class="button  button-block button-positive", ng-click="AltaProveedor()">Aceptar</a>
+ <a class="button  button-block button-assertive", ng-click="MostrarProveedor()">Mostrar</a>
+  <a class="button  button-block button-balanced", ng-click="limpiarProveedor()">Cancelar</a>  
+  </div>
+          
+        </form>
+        </body>
+
+  </ion-content>
+</ion-view>

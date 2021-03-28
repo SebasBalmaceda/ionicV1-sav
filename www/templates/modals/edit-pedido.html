@@ -1,0 +1,136 @@
+<ion-modal-view>
+  <ion-header-bar style="background-color:#000000">
+    <h1 class="title" style="color:white">Editar Pedido #{{selectedPedido.id_menu}}</h1>
+    <button class="button button-icon   ion-close-circled" ng-click="modal.hide()"></button>
+  </ion-header-bar>
+  <!--le puse un margen de 20 px para que no  estuviese muy pegado al header-->
+  <ion-content style="margin-top:20px;">
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Fecha </span>
+        <input type="text" ng-model="selectedPedido.fecha" style="background-color: transparent;">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Proveedor </span>
+        <input type="text" ng-model="selectedPedido.proveedor" style="background-color: transparent">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Comida </span>
+        <input type="text" ng-model="selectedPedido.comida" style="background-color: transparent">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Postre </span>
+        <input type="text" ng-model="selectedPedido.postre" style="background-color: transparent">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Precio </span>
+        <input type="text" ng-model="selectedPedido.precio" style="background-color: transparent">
+      </label>
+    </div>
+    <!--ahora enviamos selectedPedido al servicio -->
+    <button class="button button-positive button-block" ng-click="Editar(selectedPedido)">
+      Guardar
+    </button>
+</ion-modal-view>
+
+
+
+
+
+
+
+
+
+
+<!--aqui voy a guardar el codigo original , para referencia-->
+
+<!--<ion-list>-->
+<!--<ion-item>-->
+<!--<p class="input-label" >Nro :{{selectedPedido.id_menu }} </p>-->
+
+<!--</ion-item>-->
+
+<!--<ion-item>-->
+
+<!--<input class="input-label" ng-model="selectedPedido.fecha">-->
+
+<!--</ion-item>-->
+
+<!--<ion-item>-->
+<!--<label class="item item-input">-->
+<!--<span class="input-label">Proveedor :</span>-->
+<!--<input type="text"  ng-model="selectedPedido.proveedor">-->
+<!--</label>-->
+<!--</ion-item>-->
+
+<!--<ion-item>-->
+<!--<label class="item item-input">-->
+<!--<span class="input-label">Comida :</span>-->
+<!--<input type="text" ng-model="selectedPedido.comida">-->
+<!--</label>-->
+<!--</ion-item>-->
+
+<!--<ion-item>-->
+<!--<label class="item item-input">-->
+<!--<span class="input-label">Postre :</span>-->
+<!--<input type="text" ng-model="selectedPedido.postre">-->
+<!--</label>-->
+<!--</ion-item>-->
+
+<!--<ion-item>-->
+<!--<label class="item item-input">-->
+<!--<span class="input-label">Precio :</span>-->
+<!--<input type="text" ng-model="selectedPedido.precio">-->
+<!--</label>-->
+<!--</ion-item>-->
+
+<!--</div>-->
+<!--<button class="button button-positive button-block" ng-click="Editar(pedido,id_menu)">-->
+<!--Guardar-->
+<!--</button>-->
+
+<!--</ion-list>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

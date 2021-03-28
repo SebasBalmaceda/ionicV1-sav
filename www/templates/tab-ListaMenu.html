@@ -1,0 +1,48 @@
+
+<ion-view view-title="Menu">
+  <ion-nav-buttons side="left">
+    <button class="button icon-left ion-reply bar-stable" ng-click="volver()">Volver</button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button icon-left ion-log-out bar-stable" ng-click="logout()">Logout</button> 
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <div class="list card">
+   <div class="item item-divider bar bar-dark" >Listado de Comidas</div>
+          
+      <div class="item item-body">
+ <ion-list>
+         
+        	<ion-item ng-repeat="x in menu">
+            <ion-avatar>
+        
+      <img style ="border-radius:150%;size=100%;"src="img/comida1.png"/>
+   
+       
+        <h2 style="text-align:left">{{ x.comida}}</h2>
+          <p style="text-align:left">{{x.proveedor}}</p>
+         </ion-avatar>
+        	</ion-item>
+       
+    		</ion-list>
+    <ion-list>
+      <div></div>
+        	<ion-item ng-repeat="x in menu">
+             <ion-avatar>
+      <img style ="border-radius: 150%;size=80%"src="img/comida1.png"/>
+      
+          <h2 style="text-align:left;">{{x.postre}}</h2>
+          <p style="text-align:left;">{{x.proveedor}}</p>
+            </ion-avatar>
+        	</ion-item>
+    </ion-list>
+
+   </form>
+
+
+  </ion-content>
+</ion-view>
+ 
+  
+
+

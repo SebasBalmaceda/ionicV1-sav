@@ -1,0 +1,31 @@
+<ion-view view-title="ListaUsuarios" >
+  <ion-nav-buttons side="right">
+    <button class="button icon-left ion-log-out bar-stable" ng-click="logout()">Logout</button> 
+  </ion-nav-buttons>
+  <ion-content class="padding" ng-controller="UsuariosCtrl">
+    <div class="list card">
+      <div>
+        <div class="item item-divider bar bar-dark" >Listado de Usuarios</div>
+      </div>    
+      <div class="item item-body">
+        
+  
+  <body>
+   <form>
+ <ion-list>
+        	<ion-item ng-repeat="x in usuarios">
+  
+  <p>{{x.USUARIO}}</p>
+  <p> DNI:{{x.NRO_DOCUMENTO}}</p>
+    
+        	</ion-item>
+    		</ion-list>
+   
+
+     
+  
+   </form>
+
+
+  </ion-content>
+</ion-view>
